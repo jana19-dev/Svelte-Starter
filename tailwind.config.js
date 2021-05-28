@@ -1,6 +1,15 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,svelte}'],
+  // mode: 'jit',
+  purge: {
+    content: [
+      './public/**/*.html',
+      './src/**/*.{js,jsx,ts,tsx,svelte}'
+    ]
+  },
+  future: {
+    purgeLayersByDefault: true,
+    removeDeprecatedGapUtilities: true
+  },
   theme: {
     extend: {
       keyframes: {
