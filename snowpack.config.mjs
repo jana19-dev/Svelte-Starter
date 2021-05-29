@@ -13,8 +13,7 @@ export default {
     // {"match": "routes", "src": ".*", "dest": "/index.html"},
   ],
   optimize: {
-    /* Example: Bundle your final build: */
-    // "bundle": true,
+    bundle: true
   },
   packageOptions: {
     /* ... */
